@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "CloudWatchAccess",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:*:*:*"
+        },
+        {
+            "Sid": "S3Access",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::labalu/*"
+        },
+        {
+            "Sid": "FirehoseAccess",
+            "Effect": "Allow",
+            "Action": [
+                "firehose:ListDeliveryStreams",
+                "firehose:PutRecord",
+                "firehose:PutRecordBatch"
+            ],
+            "Resource": "arn:aws:firehose:*:*:deliverystream/delivery-stream-name"
+        }
+    ]
+}

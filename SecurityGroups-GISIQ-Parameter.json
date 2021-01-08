@@ -1,0 +1,19 @@
+[
+   {
+    "ParameterKey": "VPCId",
+    "ParameterValue": "vpc-0b7103515c45c85d1"
+   },
+   {
+    "ParameterKey": "CountryCode",
+    "ParameterValue": "US"
+   },
+   {
+    "ParameterKey": "RegionCode",
+    "ParameterValue": "E1"
+   },
+  {
+    "ParameterKey": "Environment",
+    "ParameterValue" : "prod"
+  }
+
+]
